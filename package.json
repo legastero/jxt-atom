@@ -3,15 +3,13 @@
   "version": "1.0.0",
   "description": "JXT definitions for Atom posts",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/legastero/jxt-atom"
   },
   "keywords": [
     "stanza.io",
+    "jxt",
     "atom"
   ],
   "author": "Lance Stout <lance@andyet.net>",
@@ -19,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/legastero/jxt-atom/issues"
   },
-  "homepage": "https://github.com/legastero/jxt-atom"
+  "homepage": "https://github.com/legastero/jxt-atom",
+  "scripts": {
+    "validate": "jshint . && npm ls",
+    "test": "node test/index.js"
+  },
+  "devDependencies": {
+    "jxt": "^3.0.3",
+    "precommit-hook": "^2.0.1",
+    "tape": "^4.0.0"
+  }
 }

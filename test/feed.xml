@@ -1,0 +1,38 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Atom Feed</title>
+    <subtitle>Example</subtitle>
+    <updated>2015-06-14T18:45:02Z</updated>
+    <author>
+        <name>Jane Doe</name>
+        <email>janedoe@example.com</email>
+    </author>
+    <contributor>
+        <name>John Doe</name>
+        <email>johndoe@example.com</email>
+    </contributor>
+ 
+    <entry>
+        <title>Test JXT Atom parsing</title>
+        <subtitle>Now with subtitles</subtitle>
+        <link href="http://example.org/atom" />
+        <link rel="alternate" type="text/html" href="http://example.org/atom.html"/>
+        <link rel="edit" href="http://example.org/atom/edit"/>
+        <id>urn:uuid:2d085224-6773-4869-9be0-cc0ab55afd10</id>
+        <published>2015-06-14T18:30:00Z</published>
+        <updated>2015-06-14T18:45:02Z</updated>
+        <summary>Summary of parse results.</summary>
+        <content type="xhtml" xml:lang="en">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>This is XHTML content.</p>
+            </div>
+        </content>
+        <author>
+            <name>Jane Doe</name>
+            <email>janedoe@example.com</email>
+        </author>
+        <contributor>
+            <name>John Doe</name>
+            <email>johndoe@example.com</email>
+        </contributor>
+    </entry>
+</feed>
