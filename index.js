@@ -1,7 +1,6 @@
-var NS = 'http://www.w3.org/2005/Atom';
-
 module.exports = function (stanza) {
     var types = stanza.utils;
+    var NS = 'http://www.w3.org/2005/Atom';
 
     stanza.define({
         name: 'atom',
@@ -11,7 +10,9 @@ module.exports = function (stanza) {
             id: types.subText(NS, 'id'),
             title: types.subText(NS, 'title'),
             summary: types.subText(NS, 'summary'),
-            published: types.dateSub(NS, 'published')
+            content: types.subText(NS, 'content'),
+            published: types.dateSub(NS, 'published'),
+            updated: types.dateSub(NS, 'updated')
         }
     });
 };
